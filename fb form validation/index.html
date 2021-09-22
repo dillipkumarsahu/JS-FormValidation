@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="en-US">
+	<meta charset="utf-8">
+<title>
+zoom in and out
+</title>
+<style>
+#one{
+	width:600px;
+	height:400px;
+	border:1px solid red;
+	float:left;
+}
+#two{
+	width:400px;
+	height:400px;
+	border:1px solid red;
+	border-left:0px solid red;
+	float:left;
+}
+#first,#last{
+	width:180px;
+	height:40px;
+	margin-left:8px;
+	margin-top:8px;
+}
+#mobile,#password{
+	width:375px;
+	height:40px;
+	margin-left:8px;
+	margin-top:8px;
+}
+#first,#last,#mobile,#password{
+	border:1px solid #ccc;
+	padding:10px;
+	box-sizing:border-box;
+	border-radius:5px;
+}
+#icon-one{
+	float:right;
+	position:relative;
+	top:18px;
+	left:180px;
+	width:20px;
+	height:20px;
+	opacity:0;
+}
+#icon-two{
+	float:right;
+	position:relative;
+	top:18px;
+	left:395px;
+	width:20px;
+	height:20px;
+	opacity:0;
+}
+#icon-three{
+	float:right;
+	position:relative;
+	top:65px;
+	left:410px;
+	width:20px;
+	height:20px;
+	opacity:0;
+}
+#icon-four{
+	float:right;
+	position:relative;
+	top:114px;
+	left:430px;
+	width:20px;
+	height:20px;
+	opacity:0;
+}
+input:focus{
+	outline:none;
+}
+#f-name-img{position:relative;float:right;top:5px;left:90px;display:none;}
+#s-name-img{position:relative;float:right;top:42px;left:480px;opacity:0;}
+#pass-img{position:relative;float:right;top:15px;left:12px;display:none;}
+#check_box{
+background-color:white;
+margin-left:10px;
+margin-top:10px;
+}
+#hide-show{
+font-family:sans-serif;
+font-size:13px;
+}
+#sign_up{
+	margin-left:10px;
+	margin-top:10px;
+	width:150px;
+	height:30px;
+	border:1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div id="one">
+<img src="images/warning.png" id="icon-one"/>
+<img src="images/warning.png" id="icon-two"/>
+<img src="images/warning.png" id="icon-three"/>
+<img src="images/warning.png" id="icon-four"/>
+<img src="images/fname-banner.png" id="f-name-img"/>
+<img src="images/surname.png" id="s-name-img"/>
+<img src="images/password.png" id="pass-img"/>
+</div>
+<div id="two">
+<form id="form">
+<input type="text" name="firstname" placeholder="Firstname" id="first"/>
+<input type="text" name="lastname" placeholder="Lastname" id="last"/>
+<input type="text" name="mobile/email" placeholder="Mobile or Email" id="mobile"/>
+<input type="password" name="newpassword" placeholder="New Password" id="password"/>
+<input type="checkbox" value="show password" id="check_box"><span id="hide-show">Show password</span><br>
+<input type="submit" value="sign up" id="sign_up">
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
