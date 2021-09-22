@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta lang="en-US">
+	<meta charset="utf-8">
+<title>
+form validation
+</title>
+</head>
+<body>
+<fieldset id="main-container">
+<legend>SIGN IN</legend>
+<form>
+<input type="text" name="firstname" placeholder="First Name" id="firstname" onblur="fname_val()"/><img src="images/check.png" id="f-check"><img src="images/cross.png" id="f-cross">
+
+<input type="text" name="lastname" placeholder="Last Name" id="lastname"  onblur="lname_val()"/><img src="images/check.png" id="l-check"><img src="images/cross.png" id="l-cross">
+
+<input type="number" name="mobile" placeholder="Mobile Number" id="mobile"  onblur="mob_val()"/><img src="images/check.png" id="m-check"><img src="images/cross.png" id="m-cross">
+
+<input type="date" name="date" id="date"  onblur="date_val()"/><img src="images/check.png" id="d-check"><img src="images/cross.png" id="d-cross">
+
+<input type="email" name="email" placeholder="Email" id="email"  onblur="email_val()"/><img src="images/check.png" id="e-check"><img src="images/cross.png" id="e-cross">
+
+<input type="email" name="re-email" placeholder="Re-Email" id="re-email"  onblur="re_email_val()"/><img src="images/check.png" id="re-check"><img src="images/cross.png" id="re-cross">
+
+<input type="password" name="password" placeholder="Password" id="password"  onblur="pass_val()" oninput="sign_in()"/><img src="images/check.png" id="p-check"><img src="images/cross.png" id="p-cross"><br>
+<input type="checkbox" value="i accept" id="checkbox"/><span>I Accept</span><br>
+<input type="submit" value="Sign in" disabled="disabled" id="signin">
+</form>
+</fieldset>
+<script src="script.js"></script>
+</body>
+</html>
+
+

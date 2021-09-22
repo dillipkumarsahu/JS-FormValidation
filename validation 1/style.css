@@ -1,0 +1,36 @@
+ @charset "utf-8";
+
+body{
+    padding-left: 20px;
+}
+span{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
+}
+input{
+    width: 372px;
+    height: 15px;
+    padding: 10px;
+}
+#btn{
+    width: 395px;
+    height: 40px;
+    padding: 10px;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    margin-top: 26px;
+    color: white;
+    cursor: pointer;
+}
+#btn:disabled{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}

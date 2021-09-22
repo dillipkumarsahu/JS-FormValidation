@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#main-container{
+	width:640px;
+	height:520px;
+	margin:0 auto;
+	border:1x solid black;
+}
+legend{
+	font-family:sans-serif;
+	color:#000080;
+	font-size:24px;
+}
+#firstname,#lastname,#mobile,#date,#email,#re-email,#password{
+	width:565px;
+	height:20px;
+	padding:10px;
+	margin-top:15px;
+	border:1px solid black;
+}
+#checkbox{
+	width:20px;
+	height:20px;
+	border:1px solid black;
+	background-color:white;
+	margin-top:20px;
+	margin-left:25px;
+}
+#signin{
+	width:350px;
+	height:40px;
+	border:1px solid #ccc;
+	background-color:#0055B5;
+	color:white;
+	margin-left:150px;
+	cursor:pointer;
+}
+#signin:disabled{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+#f-check,#l-check,#m-check,#d-check,#e-check,#re-check,#p-check{
+	width:40px;
+	height:40px;
+	position:relative;
+	top:15px;
+	left:7px;
+	display:none;
+}
+#f-cross,#l-cross,#m-cross,#d-cross,#e-cross,#re-cross,#p-cross{
+	width:40px;
+	height:40px;
+	position:relative;
+	top:15px;
+	left:7px;
+	display:none;
+}

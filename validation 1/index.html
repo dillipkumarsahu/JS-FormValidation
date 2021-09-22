@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <meta lang="en-US">
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<title>
+Form validation by javascript 
+</title>
+</head>
+<body>
+  <form>
+      <span>Sign UP form</span>
+      <p>Firstname</p>
+      <input type="text" name="firstname" id="firstname" onblur="fname_val()" onclick="fname_val_close()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="tick"></i>
+      
+      <p>Lastname</p>
+      <input type="text" name="lastname" id="lastname" onclick="fname_val();lname_val_close()" onblur="lname_val();uname_val()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="ltick"></i>
+      
+      <p>Mobile</p>
+      <input type="text" name="mobile" id="mobile"  onclick="fname_val();lname_val();mobile_val_close()" onblur="mobile_val()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="mtick"></i>
+      
+      <p>Re-mobile</p>
+      <input type="text" name="re-mobile" id="re-mobile"  onclick="fname_val();lname_val();mobile_val();remobile_val_close()" onblur="remobile_val()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="rmtick"></i>
+      
+      <p>Email</p>
+      <input type="email" name="email" id="email" onclick="fname_val();lname_val();mobile_val()" oninput="email_val()" onblur="tick()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="etick"></i>
+      <div id="email-hint" style="display: none;font-family: sans-serif;">
+          <sapn id="gmail" style="color: red;cursor: pointer" onclick="gmail()">gmail.com</sapn>
+          <sapn id="yahoo" style="color: blue;cursor: pointer;margin-left: 3px" onclick="yahoomail()">yahoomail.com</sapn>
+      </div>
+      <p>Username</p>
+      <input type="text" name="username" id="username" onclick="fname_val();lname_val();mobile_val()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="utick"></i>
+      
+      <p>Password</p>
+      <input type="password" name="password" id="password" onclick="fname_val();lname_val();;mobile_val()" oninput="submit_btn()" onblur="pass_val()"/>
+      <i class="fa fa-check" style="font-size: 30px;color: green;display: none;" id="ptick"></i><br/>
+      <input type="submit" value="Sign up !" disabled="disabled" id="btn"/>
+  </form>
+
+</body>
+</html>
